@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog cage Cavite | Custom Dog Cages</title>
+  <meta name="description" content="Dog cage Cavite sells durable, family-friendly custom dog cages and pet houses in Dasmarinas, Cavite.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Dog cage Cavite home">
+      <span class="brand-mark" aria-hidden="true"><i data-lucide="home"></i></span>
+      <span>
+        <strong>Dog cage Cavite</strong>
+        <small>A good home for your good boy.</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#products">Cages</a>
+      <a href="#custom">Custom sizes</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Made in Dasmarinas, Cavite</p>
+        <h1 id="hero-title">Strong pet houses for calm, happy dogs.</h1>
+        <p>
+          We build sturdy dog cages with raised floors, secure doors, weather-friendly roofing, and customizable sizing for puppies, small breeds, and bigger good boys who need more room.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#products"><i data-lucide="shopping-bag"></i> View cages</a>
+          <a class="button quiet" href="https://www.facebook.com/Joysidecar"><i data-lucide="phone"></i> Call now</a>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/dog-cage-cavite-hero.png" alt="Custom dog cage promotional image for Dog cage Cavite">
+      </figure>
+    </section>
+
+    <section class="intro section">
+      <div>
+        <p class="eyebrow">What we sell</p>
+        <h2>Dog cages that feel like a proper little home.</h2>
+      </div>
+      <p>
+        Dog cage Cavite sells custom metal dog cages and pet houses designed for daily use at home. Each cage is made to help keep dogs safe, shaded, and comfortable while giving owners a practical setup that is easy to clean and fits the available space. Customers can choose the size, roof color, and floor option depending on their dog's breed, height, and activity level.
+      </p>
+    </section>
+
+    <section class="section products" id="products" aria-labelledby="products-title">
+      <div class="section-heading">
+        <p class="eyebrow">Cage carousel</p>
+        <h2 id="products-title">Choose a style, then customize the size.</h2>
+      </div>
+
+      <div class="product-shell">
+        <div class="carousel-panel">
+          <div class="carousel-topline">
+            <span id="productCount">1 / 8</span>
+            <div class="carousel-controls" aria-label="Carousel controls">
+              <button class="icon-button" id="prevProduct" type="button" aria-label="Previous cage"><i data-lucide="chevron-left"></i></button>
+              <button class="icon-button" id="nextProduct" type="button" aria-label="Next cage"><i data-lucide="chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="product-stage" aria-live="polite">
+            <img id="productImage" src="assets/cage-1.png" alt="Black roof custom dog cage">
+          </div>
+          <div class="thumb-row" id="thumbRow" aria-label="Cage image thumbnails"></div>
+        </div>
+
+        <article class="pricing-card" id="custom">
+          <span class="tag"><i data-lucide="tag"></i> Customizable price tag</span>
+          <h3 id="productName">Classic Black Roof Cage</h3>
+          <p id="productDescription">A clean black-roof cage with a secure front door and raised flooring for easier daily cleaning.</p>
+
+          <div class="option-block">
+            <label for="sizeSelect">Size</label>
+            <select id="sizeSelect"></select>
+          </div>
+
+          <div class="option-grid">
+            <div class="option-block">
+              <label for="roofSelect">Roof color</label>
+              <select id="roofSelect">
+                <option value="0">Standard</option>
+                <option value="0">No roof</option>                
+                <option value="0">Red roof </option>
+                <option value="0">Black roof </option>
+                <option value="0">Blue roof </option>
+                <option value="0">Green roof </option>
+                <option value="0">Yellow roof </option>
+                <option value="0">Pink roof </option>
+              </select>
+            </div>
+            <div class="option-block">
+              <label for="floorSelect">Floor</label>
+              <select id="floorSelect">
+                <option value="0">Standard slatted</option>
+                <option value="800">With poop tray + PHP 800</option>
+                <option value="1000">poop tray for large cage + PHP 1000</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="price-line">
+            <span>Estimated price</span>
+            <strong id="priceValue">PHP 0</strong>
+          </div>
+
+          <div class="spec-table" role="table" aria-label="Selected cage details">
+            <div role="row">
+              <span role="cell">Best for</span>
+              <strong role="cell" id="bestFor">Small to medium dogs</strong>
+            </div>
+            <div role="row">
+              <span role="cell">Material</span>
+              <strong role="cell">Metal frame and wire mesh</strong>
+            </div>
+            <div role="row">
+              <span role="cell">Finish</span>
+              <strong role="cell">Painted outdoor-ready finish</strong>
+            </div>
+          </div>
+
+          <a class="button primary full" id="orderLink" href="tel:09631686683"><i data-lucide="phone-call"></i> Ask for this cage</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section feature-strip" aria-label="Product benefits">
+      <div>
+        <i data-lucide="shield-check"></i>
+        <strong>Secure doors</strong>
+        <span>Built with sturdy latches and metal framing.</span>
+      </div>
+      <div>
+        <i data-lucide="ruler"></i>
+        <strong>Custom sizes</strong>
+        <span>Made to fit your dog and available space.</span>
+      </div>
+      <div>
+        <i data-lucide="sparkles"></i>
+        <strong>Easy cleaning</strong>
+        <span>Raised slatted floors help daily maintenance.</span>
+      </div>
+    </section>
+
+       <section class="section gallery-section gallery-section-top" id="gallery" aria-labelledby="gallery-title">
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow">Photo gallery</p>
+          <h2 id="gallery-title">Swipe through more cage builds.</h2>
+        </div>
+        <div class="carousel-controls" aria-label="Gallery carousel controls">
+          <button class="icon-button" id="prevGallery" type="button" aria-label="Previous gallery photo"><i data-lucide="chevron-left"></i></button>
+          <button class="icon-button" id="nextGallery" type="button" aria-label="Next gallery photo"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div class="gallery-frame">
+        <div class="gallery-track" id="galleryTrack" aria-label="Dog cage gallery photos" tabindex="0"></div>
+      </div>
+      <div class="gallery-status">
+        <span id="galleryCount">1 / 33</span>
+        <span>Swipe or use arrows to browse.</span>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-heading">
+        <p class="eyebrow">Happy customers</p>
+        <h2 id="reviews-title">Positive stories from pet owners.</h2>
+      </div>
+      <div class="review-grid">
+        <article>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>"Matibay yung cage at sakto sa space namin. Mas madali na rin linisin araw-araw."</p>
+          <strong>- Carla M., Dasmarinas</strong>
+        </article>
+        <article>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>"Nagustuhan namin na puwedeng ipa-custom ang size. Comfortable ang aso namin sa bagong bahay niya."</p>
+          <strong>- Jon R., Imus</strong>
+        </article>
+        <article>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>"Maayos kausap at maganda ang gawa. Solid yung roof at door lock, sulit para sa pets."</p>
+          <strong>- Mika S., General Trias</strong>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div>
+      <a class="footer-brand" href="#top">Dog cage Cavite</a>
+      <p>Family-friendly custom dog cages and pet houses made for safe, clean, comfortable everyday use.</p>
+    </div>
+    <address class="contact-list">
+      <a href="tel:09631686683"><i data-lucide="phone"></i> 09631686683</a>
+      <a href="https://www.facebook.com/Joysidecar" target="_blank" rel="noreferrer"><i data-lucide="facebook"></i> Facebook page</a>
+      <span><a href="https://www.google.com/maps/place/Langkaan+1+Barangay+Hall/@14.2781026,120.9198008,12361m/data=!3m1!1e3!4m10!1m2!2m1!1sBrgy+Langkaan+1+Dasmarinas+Cavite!3m6!1s0x3397d579ac14af0d:0x8d7be0bded93cf6c!8m2!3d14.2939116!4d120.9386375!15sCiFCcmd5IExhbmdrYWFuIDEgRGFzbWFyaW5hcyBDYXZpdGVaIyIhYnJneSBsYW5na2FhbiAxIGRhc21hcmluYXMgY2F2aXRlkgEXbG9jYWxfZ292ZXJubWVudF9vZmZpY2WaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnNhV1ZEWDNkUlJSQULgAQD6AQQIABAP!16s%2Fg%2F11c1s2ltbx?entry=ttu&g_ep=EgoyMDI2MDUxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer"><i data-lucide="map-pin"></i> Brgy Langkaan 1 Dasmarinas Cavite</span></a>
+    </address>
+  </footer>
+</body>
+</html>
